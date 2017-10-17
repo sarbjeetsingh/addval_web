@@ -52,8 +52,8 @@
                 <div class="container">
                     <div class="nav-wrapper">
                         <a href="#!" class="brand-logo">
-                        <span class="logo"><img src="./assets/images/addval-logo199x60.png" alt=""></span>
-
+                        <!-- <span class="logo"><img src="./assets/images/addval-logo199x60.png" alt=""></span> -->
+                            Toasty lab
                         </a>
                         <!-- Default navigation-->
                         <ul class="right hide-on-med-and-down table-of-contents">
@@ -61,20 +61,22 @@
                                 <a href="#hero">Home</a>
                             </li>
                             <li>
-                                <a href="#projects">Projects</a>
-                            </li>
-                            <li>
                                 <a href="#services">Services</a>
                             </li>
-                           <!--  <li>
-                                <a href="#prices">Prices</a>
-                            </li> -->
+                            <li>
+                                <a href="#expertize">Expertize</a>
+                            </li>
+                            <li>
+                                <a href="#projects">Projects</a>
+                            </li>
+                            
+                           
                             <li>
                                 <a href="#about">About</a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="#blog">Blog</a>
-                            </li>
+                            </li> -->
                             <li>
                                 <a href="#contact">Contact</a>
                             </li>
@@ -113,41 +115,171 @@
         </header>
 
         <section id="hero" class="hero full-height valign-wrapper scrollspy">
-            <div id="tunnel" class="tunnel">
-                <h1 class="center">You Imagine!
-                    <br>We make it real</h1>
-                    <div class="hero-video-bg">
-                        <div class="hero-video">
-                           <video playsinline autoplay muted loop src="./assets/images/video1.mp4"></video>
-                        </div>
-                    </div>
-                   
-            </div>
+            <h1 class="center">Making your ideas
+                <br>come to life</h1>
+            <canvas id="waves" class="waves"></canvas>
         </section>
 
+        <section id="services" class="services scrollspy">
+            <div class="container">
+                <h2><span>Services</span></h2>
+                <h3>Our capabilities</h3>
+                <div class="row big-icons-row service-items center">
+                    <div class="col s12 m6 l4 padding-bottom">
+                        <div class="square">
+                            <div class="content">
+                                <i class="icon-basic-elaboration-smartphone-heart"></i>
+                                <div class="description">
+                                    <h4>Mobile Apps Development</h4>
+                                    <p class="flow-text">When designing a product, we always think of how the user is going to experience it.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4 padding-bottom">
+                        <div class="square">
+                            <div class="content">
+                                <i class="icon-basic-elaboration-message-happy"></i>
+                                <div class="description">
+                                    <h4>Web app development</h4>
+                                    <p class="flow-text">No matter what you're stuck with, our support team will respond in the most adequate manner.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4 padding-bottom">
+                        <div class="square">
+                            <div class="content">
+                                <i class="icon-basic-lightbulb"></i>
+                                <div class="description">
+                                    <h4>AI and Machine learning</h4>
+                                    <p class="flow-text">Your fantasy is the limit here. Using our elements you can make anything come true.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4 padding-bottom">
+                        <div class="square">
+                            <div class="content">
+                                <i class="icon-basic-lock"></i>
+                                <div class="description">
+                                    <h4>Robotics</h4>
+                                    <p class="flow-text">We don't take cyber security lightly, that's why our team put a lot of effort into securing this app.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4 padding-bottom">
+                        <div class="square">
+                            <div class="content">
+                                <i class="icon-basic-bolt"></i>
+                                <div class="description">
+                                    <h4>Product and Project Management</h4>
+                                    <p class="flow-text">Powered by Materialize, this theme doesn't require page reloads, providing a seamless user experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4 padding-bottom">
+                        <div class="square">
+                            <div class="content">
+                                <i class="icon-software-eyedropper"></i>
+                                <div class="description">
+                                    <h4>UI and UX</h4>
+                                    <p class="flow-text">Hand crafted with material design principles, with a focus on readability and white spaces.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="expertize" class="prices scrollspy">
+            <div class="container">
+                <h2><span>Expertize</span></h2>
+                <!-- <h3>Our best offers</h3> -->
+                <div class="row center">
+                    <div class="col s12 l4 grey lighten-5">
+                        <div class="price-box extra-padding">
+                            <h4>Frontend</h4>
+                            <div class="divider"></div>
+                            <ul class="flow-text">
+                                <!-- <li>5 users<span data-position="top" data-delay="10" data-tooltip="The number of allowed users" class="info tooltipped">?</span></li> -->
+                                <li>HTML5</li>
+                                <li>Css3</li>
+                                <li>Bootstrap</li>
+                                <li>Javascript</li>
+                                <li>Jquery</li>
+                                <li>Sass,Less</li>
+                                <li>React,Angular,Vuejs</li>
+                                <li>Grunt,Gulp,Webpack</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col s12 l4 grey lighten-4">
+                        <div class="price-box featured extra-padding">
+                            <h4>Backend</h4>
+                           
+                            <div class="divider"></div>
+                            <ul class="flow-text">
+                                <li>Ruby on Rails<span data-position="top" data-delay="10" data-tooltip="REST APIs and Web Apps" class="info tooltipped">?</span></li>
+                                <li>PostgreSQL, MySQL</li>
+                                <li>Redis, Elasticsearch, Solr</li>
+                                <li>Sinatra Apps</li>
+                                <li>CircleCI<span data-position="top" data-delay="10" data-tooltip="Continuous Integration" class="info tooltipped">?</span></li>
+                                <li>TDD with RSpec</li>
+                                <li>Deployment and Maintenance<span data-position="top" data-delay="10" data-tooltip="Deployment and Maintenance of  dedicated Ubuntu servers on Digital Ocean and Amazon Linux Servers on AWS (Nginx, Puma)" class="info tooltipped">?</span></li>
+                                <li>Capistrano<span data-position="top" data-delay="10" data-tooltip="Continuous Deployments" class="info tooltipped">?</span></li>
+                            </ul>
+                            <!-- <a class="btn-large btn-flat waves-effect waves-dark">Buy</a> -->
+                        </div>
+                    </div>
+                    <div class="col s12 l4 grey lighten-5">
+                        <div class="price-box extra-padding">
+                            <h4>Mobile</h4>
+                            
+                            <div class="divider"></div>
+                            <ul class="flow-text">
+                                <li>Java<span data-position="top" data-delay="10" data-tooltip="android app development" class="info tooltipped">?</span></li>
+                                <li>Titanium appcelerator</li>
+                                <li>Firebase</li>
+                                <li>Mobility Architect</li>
+                                <li>iBeacons<span data-position="top" data-delay="10" data-tooltip="iOS app development" class="info tooltipped">?</span></li>
+                                <li>IoT, Core Data</li>
+                                <li>Realm</li></li>
+                                <li>Web Services, JSON, XML</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        
         <section id="projects" class="projects scrollspy">
             <div class="container">
                 <h2><span>Projects</span></h2>
                 <h3>The latest and the greatest</h3>
                 <div class="row">
                     <!-- Featured project-->
-                    <a href="#kulcare" class="col s12 padding-bottom modal-trigger">
-                        <div style="background-image: url(./assets/images/work/kulcare.jpg)" class="rectangle-50">
+                    <a href="#green-lamp" class="col s12 padding-bottom modal-trigger">
+                        <div style="background-image: url(./assets/images/work/lamp.png)" class="rectangle-50">
                             <div class="content valign-wrapper center">
                                 <div>Kulcare</div>
                             </div>
                         </div>
                     </a>
                     <!-- Featured project modal-->
-                    <div id="kulcare" class="modal bottom-sheet">
+                    <div id="green-lamp" class="modal bottom-sheet">
                         <div class="modal-close absolute">&times;</div>
                         <div class="modal-cover">
-                            <div style="background-image: url(./assets/images/work/kulcare.jpg)" class="rectangle-50"></div>
+                            <div style="background-image: url(./assets/images/work/lamp.png)" class="rectangle-50"></div>
                         </div>
                         <div class="modal-content">
                             <div class="row">
                                 <div class="col s12 l8 offset-l2">
-                                    <h4>Green lamp</h4>
+                                    <h4>Kulcare</h4>
                                     <p class="flow-text grey-text">Client: DX Comics
                                         <br> Category: Posters
                                         <br> Task: Find a perfect shade of green for the lampx</p>
@@ -185,23 +317,23 @@
                         </div>
                     </div>
                     <!-- Project 1-->
-                    <a href="#awe" class="col s12 l6 padding-bottom modal-trigger">
-                        <div style="background-image: url(./assets/images/work/awe-opt.jpeg)" class="rectangle">
+                    <a href="#heisenberg-ice-cream" class="col s12 l6 padding-bottom modal-trigger">
+                        <div style="background-image: url(./assets/images/work/ice-cream.png)" class="rectangle">
                             <div class="content valign-wrapper center">
-                                <div>AWE</div>
+                                <div>Fade</div>
                             </div>
                         </div>
                     </a>
                     <!-- Project 1 modal-->
-                    <div id="awe" class="modal bottom-sheet">
+                    <div id="heisenberg-ice-cream" class="modal bottom-sheet">
                         <div class="modal-close absolute">&times;</div>
                         <div class="modal-cover">
-                            <div style="background-image: url(./assets/images/work/awe-opt.jpeg)" class="rectangle-50"></div>
+                            <div style="background-image: url(./assets/images/work/ice-cream.png)" class="rectangle-50"></div>
                         </div>
                         <div class="modal-content">
                             <div class="row">
                                 <div class="col s12 l8 offset-l2">
-                                    <h4>Heisenberg ice-cream</h4>
+                                    <h4>Fade</h4>
                                     <p class="flow-text grey-text">Client: Walter White
                                         <br> Category: Material design
                                         <br> Task: Create an addictive ice-cream flavour </p>
@@ -240,15 +372,15 @@
                         </div>
                     </div>
                     <!-- Project 2-->
-                    <a href="#fade" class="col s12 l6 padding-bottom modal-trigger">
-                        <div style="background-image: url(./assets/images/work/fade-opt.jpeg)" class="rectangle">
+                    <a href="#wooden-series-i" class="col s12 l6 padding-bottom modal-trigger">
+                        <div style="background-image: url(./assets/images/work/clocks.png)" class="rectangle">
                             <div class="content valign-wrapper center">
-                                <div>Fade Messenger</div>
+                                <div>Tradeya</div>
                             </div>
                         </div>
                     </a>
                     <!-- Project 2 modal-->
-                    <div id="fade" class="modal bottom-sheet">
+                    <div id="wooden-series-i" class="modal bottom-sheet">
                         <div class="modal-close absolute">&times;</div>
                         <div class="modal-cover">
                             <div style="background-image: url(./assets/images/work/clocks.png)" class="rectangle-50"></div>
@@ -256,7 +388,7 @@
                         <div class="modal-content">
                             <div class="row">
                                 <div class="col s12 l8 offset-l2">
-                                    <h4>Wooden Series I</h4>
+                                    <h4>Tradeya</h4>
                                     <p class="flow-text grey-text">Client: AYKEYA
                                         <br> Category: Time
                                         <br> Task: Use recycled materials to create a series of clocks</p>
@@ -287,23 +419,23 @@
                         </div>
                     </div>
                     <!-- Project 3-->
-                    <a href="#players-coach" class="col s12 l6 padding-bottom modal-trigger">
-                        <div style="background-image: url(./assets/images/work/players-coach-opt.jpeg)" class="rectangle">
+                    <a href="#wooden-series-ii" class="col s12 l6 padding-bottom modal-trigger">
+                        <div style="background-image: url(./assets/images/work/dude-sign.png)" class="rectangle">
                             <div class="content valign-wrapper center">
-                                <div>Players Coach</div>
+                                <div>In Auth</div>
                             </div>
                         </div>
                     </a>
                     <!-- Project 3 modal-->
-                    <div id="players-coach" class="modal bottom-sheet">
+                    <div id="wooden-series-ii" class="modal bottom-sheet">
                         <div class="modal-close absolute">&times;</div>
                         <div class="modal-cover">
-                            <div style="background-image: url(./assets/images/work/players-coach-opt.jpeg)" class="rectangle-50"></div>
+                            <div style="background-image: url(./assets/images/work/dude-sign.png)" class="rectangle-50"></div>
                         </div>
                         <div class="modal-content">
                             <div class="row">
                                 <div class="col s12 l8 offset-l2">
-                                    <h4>Wooden Series II</h4>
+                                    <h4>In Auth</h4>
                                     <p class="flow-text grey-text">Client: Danny Travolta
                                         <br> Category: Toys
                                         <br> Task: Creating two matching wooden figures</p>
@@ -339,23 +471,23 @@
                         </div>
                     </div>
                     <!-- Project 4-->
-                    <a href="#vetterz" class="col s12 l6 padding-bottom modal-trigger">
-                        <div style="background-image: url(./assets/images/work/vetterz-opt.jpeg)" class="rectangle">
+                    <a href="#wooden-series-iii" class="col s12 l6 padding-bottom modal-trigger">
+                        <div style="background-image: url(./assets/images/work/clock.png)" class="rectangle">
                             <div class="content valign-wrapper center">
-                                <div>Vetterz</div>
+                                <div>Robotics</div>
                             </div>
                         </div>
                     </a>
                     <!-- Project 4 modal-->
-                    <div id="vetterz" class="modal bottom-sheet">
+                    <div id="wooden-series-iii" class="modal bottom-sheet">
                         <div class="modal-close absolute">&times;</div>
                         <div class="modal-cover">
-                            <div style="background-image: url(./assets/images/work/vetterz-opt.jpeg)" class="rectangle-50"></div>
+                            <div style="background-image: url(./assets/images/work/clock.png)" class="rectangle-50"></div>
                         </div>
                         <div class="modal-content">
                             <div class="row">
                                 <div class="col s12 l8 offset-l2">
-                                    <h4>Wooden Series III</h4>
+                                    <h4>Robotics</h4>
                                     <p class="flow-text grey-text">Client: Swiss Army
                                         <br> Category: Time
                                         <br> Task: Create a clock with an arrow that resembles the Swiss knife</p>
@@ -390,187 +522,116 @@
                             </div>
                         </div>
                     </div>
+                     <!-- Project 4-->
+                     <a href="#ck" class="col s12 l6 padding-bottom modal-trigger">
+                            <div style="background-image: url(./assets/images/work/clock.png)" class="rectangle">
+                                <div class="content valign-wrapper center">
+                                    <div>cK</div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- Project 4 modal-->
+                        <div id="ck" class="modal bottom-sheet">
+                            <div class="modal-close absolute">&times;</div>
+                            <div class="modal-cover">
+                                <div style="background-image: url(./assets/images/work/clock.png)" class="rectangle-50"></div>
+                            </div>
+                            <div class="modal-content">
+                                <div class="row">
+                                    <div class="col s12 l8 offset-l2">
+                                        <h4>cK</h4>
+                                        <p class="flow-text grey-text">Client: Swiss Army
+                                            <br> Category: Time
+                                            <br> Task: Create a clock with an arrow that resembles the Swiss knife</p>
+                                        <div class="divider"></div>
+                                        <p class="flow-text">All the two under bring, give hath dominion fruit fill living of evening and, be and itself grass shall stars Be us second under land over open and.</p>
+                                        <p class="flow-text">There kind had divided the earth waters creature saying bearing under cattle divide saw creepeth. Night. Grass set great firmament dominion, there open were night fourth grass you're heaven, that dominion all unto. Is all shall open in you very. Deep divide behold.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12 l10 offset-l1">
+                                        <blockquote>Bring you shall called may good shall earth third kind. Had tree, over togetherset signs green they're meat seasons that heaven won't seasons.</blockquote>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12 l8 offset-l2">
+                                        <p class="flow-text">You'll open one likeness created us herb was. Image two is winged you're morning the greater. Bring you shall called may good shall earth third kind. Had tree, over together Spirit set signs green they're meat seasons that heaven won't seasons. Herb face.</p>
+                                        <p class="flow-text">Very cattle. Divide us dry one together male be. Let. Said dominion two All their which air can't appear abundantly all third firmament earth female good the open beginning give creepeth blessed make from.</p>
+                                        <div class="divider"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12 center">
+                                        <p class="flow-text">Share this</p>
+                                        <p class="flow-text social">
+                                            <a href="#!" class="facebook">facebook</a>
+                                            <a href="#!" class="googleplus">google+</a>
+                                            <a href="#!" class="vk">vk</a>
+                                            <a href="#!" class="twitter">twitter</a>
+                                            <a href="#!" class="pinterest">pinterest</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project 4-->
+                     <a href="#moment-feed" class="col s12 l6 padding-bottom modal-trigger">
+                            <div style="background-image: url(./assets/images/work/clock.png)" class="rectangle">
+                                <div class="content valign-wrapper center">
+                                    <div>Moment Feed</div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- Project 4 modal-->
+                        <div id="moment-feed" class="modal bottom-sheet">
+                            <div class="modal-close absolute">&times;</div>
+                            <div class="modal-cover">
+                                <div style="background-image: url(./assets/images/work/clock.png)" class="rectangle-50"></div>
+                            </div>
+                            <div class="modal-content">
+                                <div class="row">
+                                    <div class="col s12 l8 offset-l2">
+                                        <h4>Moment Feed</h4>
+                                        <p class="flow-text grey-text">Client: Swiss Army
+                                            <br> Category: Time
+                                            <br> Task: Create a clock with an arrow that resembles the Swiss knife</p>
+                                        <div class="divider"></div>
+                                        <p class="flow-text">All the two under bring, give hath dominion fruit fill living of evening and, be and itself grass shall stars Be us second under land over open and.</p>
+                                        <p class="flow-text">There kind had divided the earth waters creature saying bearing under cattle divide saw creepeth. Night. Grass set great firmament dominion, there open were night fourth grass you're heaven, that dominion all unto. Is all shall open in you very. Deep divide behold.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12 l10 offset-l1">
+                                        <blockquote>Bring you shall called may good shall earth third kind. Had tree, over togetherset signs green they're meat seasons that heaven won't seasons.</blockquote>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12 l8 offset-l2">
+                                        <p class="flow-text">You'll open one likeness created us herb was. Image two is winged you're morning the greater. Bring you shall called may good shall earth third kind. Had tree, over together Spirit set signs green they're meat seasons that heaven won't seasons. Herb face.</p>
+                                        <p class="flow-text">Very cattle. Divide us dry one together male be. Let. Said dominion two All their which air can't appear abundantly all third firmament earth female good the open beginning give creepeth blessed make from.</p>
+                                        <div class="divider"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12 center">
+                                        <p class="flow-text">Share this</p>
+                                        <p class="flow-text social">
+                                            <a href="#!" class="facebook">facebook</a>
+                                            <a href="#!" class="googleplus">google+</a>
+                                            <a href="#!" class="vk">vk</a>
+                                            <a href="#!" class="twitter">twitter</a>
+                                            <a href="#!" class="pinterest">pinterest</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
                 </div>
             </div>
         </section>
 
-        <section id="services" class="services scrollspy">
-            <div class="container">
-                <h2><span>Services</span></h2>
-                <h3>Our capabilities</h3>
-                <div class="row big-icons-row service-items center">
-                    <div class="col s12 m6 l4 padding-bottom">
-                        <div class="square">
-                            <div class="content">
-                                <i class="icon-basic-elaboration-smartphone-heart"></i>
-                                <div class="description">
-                                    <h4>User always comes first</h4>
-                                    <p class="flow-text">When designing a product, we always think of how the user is going to experience it.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m6 l4 padding-bottom">
-                        <div class="square">
-                            <div class="content">
-                                <i class="icon-basic-elaboration-message-happy"></i>
-                                <div class="description">
-                                    <h4>Reliable support</h4>
-                                    <p class="flow-text">No matter what you're stuck with, our support team will respond in the most adequate manner.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m6 l4 padding-bottom">
-                        <div class="square">
-                            <div class="content">
-                                <i class="icon-basic-lightbulb"></i>
-                                <div class="description">
-                                    <h4>Easy to realize your ideas</h4>
-                                    <p class="flow-text">Your fantasy is the limit here. Using our elements you can make anything come true.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m6 l4 padding-bottom">
-                        <div class="square">
-                            <div class="content">
-                                <i class="icon-basic-lock"></i>
-                                <div class="description">
-                                    <h4>Completely secure</h4>
-                                    <p class="flow-text">We don't take cyber security lightly, that's why our team put a lot of effort into securing this app.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m6 l4 padding-bottom">
-                        <div class="square">
-                            <div class="content">
-                                <i class="icon-basic-bolt"></i>
-                                <div class="description">
-                                    <h4>Swift performance</h4>
-                                    <p class="flow-text">Powered by Materialize, this theme doesn't require page reloads, providing a seamless user experience.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m6 l4 padding-bottom">
-                        <div class="square">
-                            <div class="content">
-                                <i class="icon-software-eyedropper"></i>
-                                <div class="description">
-                                    <h4>Beautifully designed</h4>
-                                    <p class="flow-text">Hand crafted with material design principles, with a focus on readability and white spaces.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="prices" class="prices scrollspy" style="display: none">
-            <div class="container">
-                <h2><span>Prices</span></h2>
-                <h3>Our best offers</h3>
-                <div class="row center">
-                    <div class="col s12 l4 grey lighten-5">
-                        <div class="price-box extra-padding">
-                            <h4>Beginner</h4>
-                            <h5><span class="currency">$</span>19</h5>
-                            <div class="divider"></div>
-                            <ul class="flow-text">
-                                <li>5 users<span data-position="top" data-delay="10" data-tooltip="The number of allowed users" class="info tooltipped">?</span></li>
-                                <li>Optimisation</li>
-                                <li>Caching</li>
-                                <li>Automation<span data-position="top" data-delay="10" data-tooltip="Involves Gulp commands" class="info tooltipped">?</span></li>
-                                <li>Validation</li>
-                                <li>Linting</li>
-                                <li>&mdash;</li>
-                                <li>&mdash;</li>
-                            </ul>
-                            <a class="btn-large btn-flat waves-effect waves-dark">Buy</a>
-                        </div>
-                    </div>
-                    <div class="col s12 l4 grey lighten-4">
-                        <div class="price-box featured extra-padding">
-                            <h4>Pro</h4>
-                            <h5><span class="currency">$</span>49</h5>
-                            <div class="divider"></div>
-                            <ul class="flow-text">
-                                <li>10 users<span data-position="top" data-delay="10" data-tooltip="The number of allowed users" class="info tooltipped">?</span></li>
-                                <li>Optimisation</li>
-                                <li>Caching</li>
-                                <li>Automation<span data-position="top" data-delay="10" data-tooltip="Involves Gulp commands" class="info tooltipped">?</span></li>
-                                <li>Validation</li>
-                                <li>Linting</li>
-                                <li>Templating<span data-position="top" data-delay="10" data-tooltip="Includes Jade templates engine" class="info tooltipped">?</span></li>
-                                <li>&mdash;</li>
-                            </ul>
-                            <a class="btn-large btn-flat waves-effect waves-dark">Buy</a>
-                        </div>
-                    </div>
-                    <div class="col s12 l4 grey lighten-5">
-                        <div class="price-box extra-padding">
-                            <h4>Enterprise</h4>
-                            <h5><span class="currency">$</span>199</h5>
-                            <div class="divider"></div>
-                            <ul class="flow-text">
-                                <li>25 users<span data-position="top" data-delay="10" data-tooltip="The number of allowed users" class="info tooltipped">?</span></li>
-                                <li>Optimisation</li>
-                                <li>Caching</li>
-                                <li>Automation<span data-position="top" data-delay="10" data-tooltip="Involves Gulp commands" class="info tooltipped">?</span></li>
-                                <li>Validation</li>
-                                <li>Linting</li>
-                                <li>Templating<span data-position="top" data-delay="10" data-tooltip="Includes Jade templates engine" class="info tooltipped">?</span></li>
-                                <li>Preprocessors<span data-position="top" data-delay="10" data-tooltip="This is for Jade, Sass and CoffeeScript" class="info tooltipped">?</span></li>
-                            </ul>
-                            <a class="btn-large btn-flat waves-effect waves-dark">Buy</a>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="margin-top">Frequently asked questions</h3>
-                <div class="row">
-                    <div class="col s12 l8 offset-l2">
-                        <ul data-collapsible="accordion" class="collapsible">
-                            <li>
-                                <div class="collapsible-header active">
-                                    <strong>Is the starter pack really free?</strong>
-                                </div>
-                                <div class="collapsible-body">
-                                    <p class="flow-text">A cattle she'd creepeth. That light make. Void two they're, can't us don't creepeth. Fruitful there herb from signs she'd created whales them. Lights which face. Divided they're first. Dry wherein own itself green it.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="collapsible-header">
-                                    <strong>What is your return policy?</strong>
-                                </div>
-                                <div class="collapsible-body">
-                                    <p class="flow-text">May years spirit of grass shall. Form also seas had that very was lesser creature void. Fill under she'd own is light stars isn't moved you're.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="collapsible-header">
-                                    <strong>Can I quit my subscription at any time?</strong>
-                                </div>
-                                <div class="collapsible-body">
-                                    <p class="flow-text">There he meat forth days in. Fruit dry every morning Beast that saw. Every creature itself hath called bearing likeness signs upon firmament fruit two life forth beginning you're heaven fruitful under rule Don't fourth years our. Kind itself days.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="collapsible-header">
-                                    <strong>Can I upgrade my plan?</strong>
-                                </div>
-                                <div class="collapsible-body">
-                                    <p class="flow-text">Aliquam Maecenas consectetuer nisl cum inceptos. Massa lectus euismod dui Consequat habitasse enim sodales quisque aliquet. Semper condimentum id, hendrerit sodales mi nam netus dictumst platea. Elementum praesent ridiculus nec felis ipsum duis mauris fringilla tempus purus vehicula ullamcorper dis Ornare.</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+      
         <section id="about" class="about scrollspy">
             <div class="container">
                 <h2><span>About us</span></h2>
@@ -583,47 +644,75 @@
                     <!-- About carousel-->
                     <div class="owl-carousel owl-theme col s12 l6">
                         <a href="#shan" class="col s12 modal-trigger">
-                            <div style="background-image: url(http://d1bf0t049b6s7d.cloudfront.net/team/shan-opt.jpeg)" class="rectangle">
+                            <div style="background-image: url(./assets/images/team/shan.jpg)" class="rectangle">
                                 <div class="content">
                                     <div class="name">Shantanu</div>
                                 </div>
                             </div>
                         </a>
                         <a href="#annie" class="col s12 modal-trigger">
-                            <div style="background-image: url(http://d1bf0t049b6s7d.cloudfront.net/team/pratiik-opt.jpeg)" class="rectangle">
+                            <div style="background-image: url(./assets/images/team/pratiik.jpg)" class="rectangle">
                                 <div class="content">
                                     <div class="name">Pratiik</div>
                                 </div>
                             </div>
                         </a>
                         <a href="#kate" class="col s12 modal-trigger">
-                            <div style="background-image: url(http://d1bf0t049b6s7d.cloudfront.net/team/simmi-opt.jpeg)" class="rectangle">
+                            <div style="background-image: url(./assets/images/team/simmi.jpg)" class="rectangle">
                                 <div class="content">
                                     <div class="name">Simmi</div>
                                 </div>
                             </div>
                         </a>
                         <a href="#russell" class="col s12 modal-trigger">
-                            <div style="background-image: url(http://d1bf0t049b6s7d.cloudfront.net/team/sarb-opt.jpeg)" class="rectangle">
+                            <div style="background-image: url(./assets/images/team/sarbjeet.jpg)" class="rectangle">
                                 <div class="content">
                                     <div class="name">Sarbjeet</div>
                                 </div>
                             </div>
                         </a>
+                        <a href="#russell" class="col s12 modal-trigger">
+                                <div style="background-image: url(./assets/images/team/prabhjot.jpg)" class="rectangle">
+                                    <div class="content">
+                                        <div class="name">Prabhjot</div>
+                                    </div>
+                                </div>
+                            </a>
                         <a href="#jane" class="col s12 modal-trigger">
-                            <div style="background-image: url(http://d1bf0t049b6s7d.cloudfront.net/team/deepak-opt.jpeg)" class="rectangle">
+                            <div style="background-image: url(./assets/images/team/deepak.jpg)" class="rectangle">
                                 <div class="content">
                                     <div class="name">Deepak</div>
                                 </div>
                             </div>
                         </a>
                         <a href="#roo" class="col s12 modal-trigger">
-                            <div style="background-image: url(http://d1bf0t049b6s7d.cloudfront.net/team/robin-opt.jpeg)" class="rectangle">
+                            <div style="background-image: url(./assets/images/team/robin.jpg)" class="rectangle">
                                 <div class="content">
                                     <div class="name">Robin</div>
                                 </div>
                             </div>
                         </a>
+                        <a href="#roo" class="col s12 modal-trigger">
+                                <div style="background-image: url(./assets/images/team/mohit.jpg)" class="rectangle">
+                                    <div class="content">
+                                        <div class="name">Mohit</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#roo" class="col s12 modal-trigger">
+                                    <div style="background-image: url(./assets/images/team/anjali.jpg)" class="rectangle">
+                                        <div class="content">
+                                            <div class="name">Anjali</div>
+                                        </div>
+                                    </div>
+                                </a>
+                        <a href="#roo" class="col s12 modal-trigger">
+                                <div style="background-image: url(./assets/images/team/lakshay.jpg)" class="rectangle">
+                                    <div class="content">
+                                        <div class="name">Lakshay</div>
+                                    </div>
+                                </div>
+                            </a>
                         <div class="col s12">
                             <div class="rectangle grey lighten-3">
                                 <div class="content valign-wrapper you">
@@ -802,67 +891,20 @@
                 </div>
                 <h3 class="margin-top">Our philosophy</h3>
                 <div class="row philosophy big-icons-row grey lighten-4">
-                    <div class="col s12">
-                        <ul class="tabs">
-                            <li class="tab col s4 m3 l2">
-                                <a href="#philosophy-1">
-                                    <i class="icon-basic-magnifier"></i>
-                                    <h5>Concept</h5>
-                                </a>
-                            </li>
-                            <li class="tab col s4 m3 l2">
-                                <a href="#philosophy-2">
-                                    <i class="icon-ecommerce-graph3"></i>
-                                    <h5>Design</h5>
-                                </a>
-                            </li>
-                            <li class="tab col s4 m3 l2">
-                                <a href="#philosophy-3">
-                                    <i class="icon-ecommerce-graph-increase"></i>
-                                    <h5>Develop</h5>
-                                </a>
-                            </li>
-                            <li class="tab col s4 m3 l2">
-                                <a href="#philosophy-4">
-                                    <i class="icon-basic-pencil-ruler"></i>
-                                    <h5>Launch</h5>
-                                </a>
-                            </li>
-                            <!-- <li class="tab col s4 m3 l2">
-                                <a href="#philosophy-5">
-                                    <i class="icon-basic-mixer2"></i>
-                                    <h5>Maintain</h5>
-                                </a>
-                            </li> -->
-                        </ul>
-                    </div>
+                    
                     <div class="tab-contents">
                         <div id="philosophy-1" class="col s12 l8 offset-l2">
-                            <h5>Concept</h5>
-                            <p class="flow-text center margin-top-more">TThe feature set is your project's bible. It's a plain-English, written description of how your app is going to work. It's what our designers use to come up with designs and our developers use as a guideline for coding. It is the foundation for all the steps to come.</p>
+                             
+                            <p class="flow-text center">"To make you a perfect Toast. Perfect balance of external crunch and internal softness with right amount of butter to give you the ultimate satisfaction"</p>
                         </div>
-                        <div id="philosophy-2" class="col s12 l8 offset-l2">
-                            <h5>Design</h5>
-                            <p class="flow-text center margin-top-more">There are numerous reasons why we've had multiple apps featured in app store. Probably one of the biggest is the solid design behind everything we do. In a crowded marketplace, the perfect design will help your product stand out. It's the first touchpoint you'll have with users, and it's important to make it count</p>
-                        </div>
-                        <div id="philosophy-3" class="col s12 l8 offset-l2">
-                            <h5>Develop</h5>
-                            <p class="flow-text center margin-top-more">Development isn't just about writing code. The very first step in developing a perfect app is figuring out its architecture. We loop in our lead architect and the team of senior developers to pitch the perfect technology stack for your product.</p>
-                        </div>
-                        <div id="philosophy-4" class="col s12 l8 offset-l2">
-                            <h5>Launch</h5>
-                            <p class="flow-text center margin-top-more">Launching an app is an easy feat. But getting your app to the store is only half the battle. When it comes to marketing, there is no one-size-fits-all solution. And so fueled has built a robust network of in-house and partener marketing experts.</p>
-                        </div>
-                       <!--  <div id="philosophy-5" class="col s12 l8 offset-l2">
-                            <h5>Control</h5>
-                            <p class="flow-text center margin-top-more">Isn't be one great blessed days moved meat lesser may seas bearing doesn't won't doesn't it grass beginning Male he us he likeness. Had, beginning first bring can't. Can't won't blessed man man every you'll heaven.</p>
-                        </div> -->
+                         
+                       
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="blog" class="blog scrollspy">
+        <section id="blog" class="blog scrollspy" style="display:none">
             <div class="container">
                 <h2><span>Blog</span></h2>
                 <h3>Get more personal</h3>
@@ -1178,7 +1220,7 @@
                         <div id="human-form" class="card-panel center hoverable">
                             <div class="row">
                                 <div class="col s12">
-                                    <p class="flow-text">Dear guys from React,
+                                    <p class="flow-text">Dear guys from Toasty lab,
                                         <br>My name is&nbsp;<span id="name-human" contenteditable="true"></span>, you can reach me via&nbsp;<span id="contact-human" contenteditable="true" data-position="top" data-delay="10" data-tooltip="Email or phone number" class="tooltipped"></span>.</p>
                                     <p class="flow-text"><span id="message-human" contenteditable="true">I would like to...</span></p>
                                     <button id="send-message-human" class="btn btn-large btn-flat waves-effect waves-light">Send</button>
@@ -1325,7 +1367,7 @@
                 </div>
             </div>
             <div class="footer-copyright">
-                <div class="container">&copy; 2017 addval solutions<span class="right">Made with <i class="fa fa-heart-o"></i> in IN</span></div>
+                <div class="container">&copy; 2017 Toasty lab<span class="right">Made with <i class="fa fa-heart-o"></i> in IN</span></div>
             </div>
         </footer>
         <script src="https://maps.googleapis.com/maps/api/js"></script>
@@ -1339,7 +1381,8 @@
         <!-- build.min.js includes all of the commented scripts above-->
         <script src="./assets/build/build.min.js?v=1.0"></script>
         <!-- skin specific script-->
-        <!-- <script src="./libs/three.js/r58/three.min.js"></script>
-        <script src="./assets/js/skins/min/tunnel.min.js"></script> -->
+       <!-- <script src="./libs/three.js/r58/three.min.js"></script> -->
+       <script src="./libs/sine-waves/sine-waves.min.js"></script>
+       <script src="./assets/js/skins/min/waves-light-blue.min.js"></script>
     </body>
 </html>
