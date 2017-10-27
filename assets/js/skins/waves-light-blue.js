@@ -1,7 +1,7 @@
 (function () {
     var waves = new SineWaves({
         el: document.getElementById('waves'),
-        speed: -8,
+        speed: -5,
         width: function () {
             return $(window).width() + 100;
         },
