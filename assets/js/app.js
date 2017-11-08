@@ -79,7 +79,10 @@ App = {
      Documentation: https://snazzymaps.com/about
      */
     map1: function map () {
-        if ($('#map1').length > 0) {
+        $('#map1-link').addClass('active');
+        $('#map2-link').removeClass('active');
+        $('#map3-link').removeClass('active');
+        if ($('#map').length > 0) {
             // Fetching the styles from the config dir
             $.ajax({
                 url: './assets/config/' + App.CONFIG.googleMaps1.stylesConfigFile,
@@ -107,7 +110,7 @@ App = {
                 mapOptions.styles = mapStyle;
             }
 
-            var mapElement = document.getElementById('map1');
+            var mapElement = document.getElementById('map');
 
             var map = new google.maps.Map(mapElement, mapOptions);
 
@@ -118,10 +121,15 @@ App = {
                     title: App.CONFIG.googleMaps1.markerTitle
                 });
             }
+            
+            
         }
     },
     map2: function map () {
-        if ($('#map2').length > 0) {
+        $('#map2-link').addClass('active');
+        $('#map1-link').removeClass('active');
+        $('#map3-link').removeClass('active');
+        if ($('#map').length > 0) {
             // Fetching the styles from the config dir
             $.ajax({
                 url: './assets/config/' + App.CONFIG.googleMaps2.stylesConfigFile,
@@ -149,7 +157,7 @@ App = {
                 mapOptions.styles = mapStyle;
             }
 
-            var mapElement = document.getElementById('map2');
+            var mapElement = document.getElementById('map');
 
             var map = new google.maps.Map(mapElement, mapOptions);
 
@@ -160,10 +168,14 @@ App = {
                     title: App.CONFIG.googleMaps2.markerTitle
                 });
             }
+            
         }
     },
     map3: function map () {
-        if ($('#map3').length > 0) {
+        $('#map3-link').addClass('active');
+        $('#map2-link').removeClass('active');
+        $('#map1-link').removeClass('active');
+        if ($('#map').length > 0) {
             // Fetching the styles from the config dir
             $.ajax({
                 url: './assets/config/' + App.CONFIG.googleMaps3.stylesConfigFile,
@@ -191,7 +203,7 @@ App = {
                 mapOptions.styles = mapStyle;
             }
 
-            var mapElement = document.getElementById('map3');
+            var mapElement = document.getElementById('map');
 
             var map = new google.maps.Map(mapElement, mapOptions);
 
@@ -202,6 +214,7 @@ App = {
                     title: App.CONFIG.googleMaps3.markerTitle
                 });
             }
+            
         }
     },
 
@@ -361,8 +374,8 @@ $(document).ready(function () {
     App.sideNav();
     App.owl();
     App.map1();
-    App.map2();
-    App.map3();
+    // App.map2();
+    // App.map3();
     
     
 

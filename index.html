@@ -61,7 +61,7 @@
                                 <a href="#hero">Home</a>
                             </li>
                             <li>
-                                <a href="#services">Services</a>
+                                <a href="#services">Capabilities</a>
                             </li>
                             <!-- <li>
                                 <a href="#expertize">Expertize</a>
@@ -90,7 +90,7 @@
                                 <a href="#projects">Projects</a>
                             </li>
                             <li>
-                                <a href="#services">Services</a>
+                                <a href="#services">Capabilities</a>
                             </li>
                             <!-- <li>
                                 <a href="#prices">Prices</a>
@@ -122,8 +122,8 @@
 
         <section id="services" class="services scrollspy">
             <div class="container">
-                <h2><span>Services</span></h2>
-                <h3>Our capabilities</h3>
+                <h2><span>Capabilities</span></h2>
+                <!-- <h3>Our capabilities</h3> -->
                 <div class="row big-icons-row service-items center">
                     <div class="col s12 m6 l4 padding-bottom">
                         <div class="square">
@@ -317,7 +317,7 @@
         <section id="projects" class="projects scrollspy">
             <div class="container">
                 <h2><span>Projects</span></h2>
-                <h3>The latest and the greatest</h3>
+                <!-- <h3>The latest and the greatest</h3> -->
                 <div class="row">
                     <!-- Featured project-->
                     <a href="#green-lamp" class="col s12 padding-bottom modal-trigger">
@@ -1363,22 +1363,24 @@
                                 <div class="col s12">
                                     <p class="flow-text">Dear guys from addval,
                                         <br>My name is&nbsp;<span id="name-human" contenteditable="true"></span>, you can reach me via&nbsp;<span id="contact-human" contenteditable="true" data-position="top" data-delay="10" data-tooltip="Email or phone number" class="tooltipped"></span>.</p>
-                                    <p class="flow-text">I have a message<span id="message-human" contenteditable="true"></span></p>
+                                    <p class="flow-text">I want<span id="message-human" contenteditable="true"></span></p>
                                     <button id="send-message-human" class="btn btn-large btn-flat waves-effect waves-light">Send</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <h3 class="margin-top">Come pay us a visit</h3>
+                <h3 class="margin-top">Come visit us</h3>
+                <div class="row">
+                    <div class="map" id="map"></div>
+                </div>
                 <div class="row">
                         <div class="col s12 m4 l4 map-col">
-                            <div class="map-col-inner">
+                            <!-- <div class="map-col-inner">
                                 <div id="map1"  class="small-map"></div>
-                                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.9544388156937!2d-118.50501668535372!3d34.01938042690976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4c6b952f30b%3A0xe7e1addb430e537b!2s1032+2nd+St+%23303%2C+Santa+Monica%2C+CA+90403%2C+USA!5e0!3m2!1sen!2sin!4v1448263036588" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe> -->
-                            </div>
+                            </div> -->
                             <div class="map-address">
-                                <p><b>Santa Monica,CA</b></p>
+                                <p><b> <a href="#" id="map1-link" class="map-link"  onclick="App.map1();return false;">Santa Monica,CA</a> </b></p>
                                 <address>
                                 1032, 2nd Street ste. 303<br>
                                 Santa Monica, CA - 90403<br>
@@ -1392,12 +1394,11 @@
                             </div>
                         </div>
                     <div class="col s12 m4 l4 map-col">
-                            <div class="map-col-inner">
+                            <!-- <div class="map-col-inner">
                                 <div id="map2" class=" small-map"></div>
-                                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3431.530432573363!2d76.73837281455513!3d30.67534859544821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fec06a86ddf67%3A0x74b5e9c7ee9369ba!2sBestech+Business+Tower!5e0!3m2!1sen!2sin!4v1448278707170" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe> -->
-                                </div>
+                            </div> -->
                             <div class="map-address">
-                                <p><b>Chandigarh,India</b></p>
+                                <p><b> <a href="#" id="map2-link" class="map-link"  onclick="App.map2();return false;">Chandigarh,India</a> </b></p>
                                 <address>
                                 A 621, 6th Floor<br>
                                 Bestech Business Tower<br>
@@ -1411,12 +1412,11 @@
                             </div>
                     </div>
                     <div class="col s12 m4 l4 map-col">
-                            <div class="map-col-inner">
-                                    <div id="map3" class=" small-map"></div>
-                                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6584.276763742738!2d77.60517331577228!3d12.972449502037676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sGopala+Krishna+Complex+%2C+45%2F3+Residency+road%2C+Bangalore%2C+Karnataka+560025!5e0!3m2!1sen!2sin!4v1507632443422" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe> -->
-                             </div>
+                            <!-- <div class="map-col-inner">
+                                <div id="map3" class=" small-map"></div>
+                             </div> -->
                              <div class="map-address">
-                                <p><b>Bangalore,India</b></p>
+                                <p><b> <a href="#" id="map3-link" class="map-link"  onclick="App.map3();return false;">Bangalore,India</a> </b></p>
                                 <address>
                                 3rd Floor, Gopala Krishna Complex,
                                 #45/3 Residency Road <br>
@@ -1515,7 +1515,7 @@
                 <div class="container">&copy; 2017 addval labs<span class="right">Made with <i class="fa fa-heart-o"></i> in IN</span></div>
             </div>
         </footer>
-        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFaNF1oJd7uJ4pFTerloppHt_c1Rjy4UI"></script>
         <!--script(src='./libs/jquery-2.1.1.min.js')-->
         <!--script(src='./libs/materialize/materialize.js')-->
         <!--script(src='./libs/masonry/masonry.pkgd.js')-->
