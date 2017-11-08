@@ -6,7 +6,8 @@
             return $(window).width() + 100;
         },
         height: function () {
-            return $(window).height()-100;
+            return $(window).height();
+            // return 700;
         },
         rotate: 180,
         ease: 'SineOut',

@@ -26,13 +26,30 @@ CONFIG = {
     toastSpeed: 4000,
 
     // Google map position and zoom level
-    googleMaps: {
-        lat: 40.7571073,
-        lng: -73.9824381,
-        zoom: 15,
-        marker: true,
-        markerTitle: 'React',
-        stylesConfigFile: 'maps-apple-style.json'
-    }
-
+    googleMaps1: 
+        {
+            lat: 34.019376,
+            lng: -118.502828,
+            zoom: 15,
+            marker: true,
+            markerTitle: 'Chandigarh, India',
+            stylesConfigFile: 'maps-apple-style.json'
+        },
+        
+        googleMaps2:{
+            lat: 30.675430,
+            lng: 76.740548,
+            zoom: 15,
+            marker: true,
+            markerTitle: 'Santa Monica, CA',
+            stylesConfigFile: 'maps-apple-style.json'
+        },
+        googleMaps3:{
+            lat: 12.973576,
+            lng: 77.609238,
+            zoom: 15,
+            marker: true,
+            markerTitle: 'Bangalore, India',
+            stylesConfigFile: 'maps-apple-style.json'
+        }
 };

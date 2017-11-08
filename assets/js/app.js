@@ -78,11 +78,11 @@ App = {
      Also using Snazzy Maps to style the map
      Documentation: https://snazzymaps.com/about
      */
-    map: function map () {
-        if ($('#map').length > 0) {
+    map1: function map () {
+        if ($('#map1').length > 0) {
             // Fetching the styles from the config dir
             $.ajax({
-                url: './assets/config/' + App.CONFIG.googleMaps.stylesConfigFile,
+                url: './assets/config/' + App.CONFIG.googleMaps1.stylesConfigFile,
                 type: 'GET'
             }).done(function (mapStyle) {
                 // Initializing the styled map
@@ -97,8 +97,8 @@ App = {
 
         function initMap (mapStyle) {
             var mapOptions = {
-                zoom: App.CONFIG.googleMaps.zoom,
-                center: new google.maps.LatLng(App.CONFIG.googleMaps.lat, App.CONFIG.googleMaps.lng),
+                zoom: App.CONFIG.googleMaps1.zoom,
+                center: new google.maps.LatLng(App.CONFIG.googleMaps1.lat, App.CONFIG.googleMaps1.lng),
                 scrollwheel: false,
                 draggable: App.GLOBAL.isTouch() ? false : true
             };
@@ -107,15 +107,99 @@ App = {
                 mapOptions.styles = mapStyle;
             }
 
-            var mapElement = document.getElementById('map');
+            var mapElement = document.getElementById('map1');
 
             var map = new google.maps.Map(mapElement, mapOptions);
 
-            if (App.CONFIG.googleMaps.marker) {
+            if (App.CONFIG.googleMaps1.marker) {
                 var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(App.CONFIG.googleMaps.lat, App.CONFIG.googleMaps.lng),
+                    position: new google.maps.LatLng(App.CONFIG.googleMaps1.lat, App.CONFIG.googleMaps1.lng),
                     map: map,
-                    title: App.CONFIG.googleMaps.markerTitle
+                    title: App.CONFIG.googleMaps1.markerTitle
+                });
+            }
+        }
+    },
+    map2: function map () {
+        if ($('#map2').length > 0) {
+            // Fetching the styles from the config dir
+            $.ajax({
+                url: './assets/config/' + App.CONFIG.googleMaps2.stylesConfigFile,
+                type: 'GET'
+            }).done(function (mapStyle) {
+                // Initializing the styled map
+                initMap(mapStyle);
+            }).error(function (err) {
+                // Initializing the map without styles and letting know why that happened
+                console.error('Map style configuration is missing:', err.statusText);
+                console.warn('Loading map with default style');
+                initMap();
+            });
+        }
+
+        function initMap (mapStyle) {
+            var mapOptions = {
+                zoom: App.CONFIG.googleMaps2.zoom,
+                center: new google.maps.LatLng(App.CONFIG.googleMaps2.lat, App.CONFIG.googleMaps2.lng),
+                scrollwheel: false,
+                draggable: App.GLOBAL.isTouch() ? false : true
+            };
+
+            if (mapStyle !== 'undefined') {
+                mapOptions.styles = mapStyle;
+            }
+
+            var mapElement = document.getElementById('map2');
+
+            var map = new google.maps.Map(mapElement, mapOptions);
+
+            if (App.CONFIG.googleMaps2.marker) {
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(App.CONFIG.googleMaps2.lat, App.CONFIG.googleMaps2.lng),
+                    map: map,
+                    title: App.CONFIG.googleMaps2.markerTitle
+                });
+            }
+        }
+    },
+    map3: function map () {
+        if ($('#map3').length > 0) {
+            // Fetching the styles from the config dir
+            $.ajax({
+                url: './assets/config/' + App.CONFIG.googleMaps3.stylesConfigFile,
+                type: 'GET'
+            }).done(function (mapStyle) {
+                // Initializing the styled map
+                initMap(mapStyle);
+            }).error(function (err) {
+                // Initializing the map without styles and letting know why that happened
+                console.error('Map style configuration is missing:', err.statusText);
+                console.warn('Loading map with default style');
+                initMap();
+            });
+        }
+
+        function initMap (mapStyle) {
+            var mapOptions = {
+                zoom: App.CONFIG.googleMaps3.zoom,
+                center: new google.maps.LatLng(App.CONFIG.googleMaps3.lat, App.CONFIG.googleMaps3.lng),
+                scrollwheel: false,
+                draggable: App.GLOBAL.isTouch() ? false : true
+            };
+
+            if (mapStyle !== 'undefined') {
+                mapOptions.styles = mapStyle;
+            }
+
+            var mapElement = document.getElementById('map3');
+
+            var map = new google.maps.Map(mapElement, mapOptions);
+
+            if (App.CONFIG.googleMaps3.marker) {
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(App.CONFIG.googleMaps3.lat, App.CONFIG.googleMaps3.lng),
+                    map: map,
+                    title: App.CONFIG.googleMaps3.markerTitle
                 });
             }
         }
@@ -276,7 +360,11 @@ $(document).ready(function () {
     App.scrollspy();
     App.sideNav();
     App.owl();
-    App.map();
+    App.map1();
+    App.map2();
+    App.map3();
+    
+    
 
     if ($('#human-form').length) {
         App.contactForm('human');
